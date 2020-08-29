@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: rgba(19, 139, 148, 0.753);
+  columns: #000;
+  font-family: monospace;
+}
+
+.container{
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: 0;
+  left:0;
+}
+
+.outer-circle{
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  height: 50px;
+}
+
+.toggle {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.button {
+  font-size: 1.5em;
+  padding: 10px;
+  border: none;
+  color:white;
+  font-weight: bolder;
+  text-shadow: 1px 2px rgb(87, 86, 86);
+  border-radius: 14px;
+  background-color: lightgray;
+}
+
+.button:focus{
+  outline: none;
+}
+
+.button:hover{
+  background-color: rgb(194, 193, 193);
+}
+
+#switches {
+  position: absolute;
+  font-family: 'Original Surfer', cursive;
+  margin-left: 26px;
+  margin-top: 110px;
+}
+
+.text2 {
+  position: absolute;
+  font-family: 'Original Surfer', cursive;
+  margin-left: 83px;
+  margin-top: 197px;
+}
+
+.text1 {
+  position: absolute;
+  font-family: 'Original Surfer', cursive;
+  margin-left: 23px;
+  margin-top: 146px;
+}
+
+.text1 span:last-child {
+  padding-left: 84px;
+}
+
+#title {
+  font-family: 'Original Surfer', cursive;
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  text-shadow: 1px 2px rgb(88, 87, 87);
+  margin-left: 51px;
+  margin-top: 40px;
+}
+
+#turn {
+  position: absolute;
+  background: #330000;
+  color: red;
+  font-family: courier;
+  font-size: 20px;
+  height: 30px;
+  width: 50px;
+  margin-left: 90px;
+  margin-top: 170px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+#outer-circle {
+  background: #385a94;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  border-style: solid;
+  border-width: 10px;
+  margin: auto;
+  margin-top: 60px;
+  box-shadow: 8px 8px 15px 5px #00000048;
+}
+
+#topleft {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 250px 0 0 0;
+  -moz-border-radius: 250px 0 0 0;
+  -webkit-border-radius: 250px 0 0 0;
+  background: rgb(115, 255, 96);
+  transition: all 0.1s linear;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0px 0px -250px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#topright {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 0 250px 0 0;
+  -moz-border-radius: 0 250px 0 0;
+  -webkit-border-radius: 0 250px 0 0;
+  background: rgb(246, 83, 83);
+  transition: all 0.1s linear;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0px 0px 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+#bottomright {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 0 0 250px 0;
+  -moz-border-radius: 0 0 250px 0;
+  -webkit-border-radius: 0 0 250px 0;
+  background:rgb(83, 86, 246);
+  transition: all 0.1s linear;
+  top: 50%;
+  left: 50%;
+  margin: 0px 0px -250px 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#bottomleft {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 0 0 0 250px;
+  -moz-border-radius: 0 0 0 250px;
+  -webkit-border-radius: 0 0 0 250px;
+  background: rgb(246, 243, 83);
+  transition: all 0.1s linear;
+  top: 50%;
+  left: 50%;
+  margin: 0px -250px 0px -250px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#inner-circle {
+  position: absolute;
+  background: rgba(226, 226, 226, 0.76);
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  top: 50%;
+  left: 50%;
+  margin: -125px 0px 0px -125px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#nombreJugador, #mensaje-jugador{
+  color: white;
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div #nombreJugador, div #mensaje-jugador{
+  display:flex;
+  padding: 1rem;
+  justify-content: start;
+}
+
+#nombreJugador{
+  margin-top: 45px;
+}
